@@ -337,32 +337,38 @@ export default function Index() {
               </div>
             ))}
           </div>
-          {/* VR Video */}
+          {/* VR Photos */}
           <div>
             <h3 className="text-2xl font-bold text-white uppercase mb-6 tracking-wide" style={{ fontFamily: "Oswald" }}>
               <span style={{ color: "var(--neon-cyan)" }}>→</span> VR в действии
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="video-wrapper rounded-xl overflow-hidden">
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/vYjB4bWWJeA"
-                    title="VR технологии"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+              <div className="video-wrapper rounded-xl overflow-hidden group">
+                <div className="relative aspect-video overflow-hidden rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1617802690992-15d93263d3a9?w=800&q=80"
+                    alt="Человек в VR шлеме"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4">
+                    <span className="tech-tag">VR шлем</span>
+                    <p className="text-white font-bold mt-1 text-lg uppercase" style={{ fontFamily: "Oswald" }}>Полное погружение</p>
+                  </div>
                 </div>
               </div>
-              <div className="video-wrapper rounded-xl overflow-hidden">
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/p9p4QCGsW2Y"
-                    title="VR в медицине"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+              <div className="video-wrapper rounded-xl overflow-hidden group">
+                <div className="relative aspect-video overflow-hidden rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?w=800&q=80"
+                    alt="VR в медицине"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4">
+                    <span className="tech-tag">Медицина</span>
+                    <p className="text-white font-bold mt-1 text-lg uppercase" style={{ fontFamily: "Oswald" }}>VR в хирургии</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -395,32 +401,38 @@ export default function Index() {
               </div>
             ))}
           </div>
-          {/* AR Video */}
+          {/* AR Photos */}
           <div>
             <h3 className="text-2xl font-bold text-white uppercase mb-6 tracking-wide" style={{ fontFamily: "Oswald" }}>
               <span style={{ color: "var(--neon-magenta)" }}>→</span> AR в действии
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 0 0 2px rgba(255,0,255,0.3), 0 0 40px rgba(255,0,255,0.1)" }}>
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/WxzcD04is3M"
-                    title="AR технологии"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+              <div className="rounded-xl overflow-hidden group" style={{ boxShadow: "0 0 0 2px rgba(255,0,255,0.3), 0 0 40px rgba(255,0,255,0.1)" }}>
+                <div className="relative aspect-video overflow-hidden rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=800&q=80"
+                    alt="Дополненная реальность на смартфоне"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4">
+                    <span className="tech-tag" style={{ background: "rgba(255,0,255,0.15)", borderColor: "rgba(255,0,255,0.4)", color: "var(--neon-magenta)" }}>Смартфон</span>
+                    <p className="text-white font-bold mt-1 text-lg uppercase" style={{ fontFamily: "Oswald" }}>AR в ритейле</p>
+                  </div>
                 </div>
               </div>
-              <div className="rounded-xl overflow-hidden" style={{ boxShadow: "0 0 0 2px rgba(255,0,255,0.3), 0 0 40px rgba(255,0,255,0.1)" }}>
-                <div className="aspect-video">
-                  <iframe
-                    className="w-full h-full"
-                    src="https://www.youtube.com/embed/onYKEkAE4IQ"
-                    title="AR в промышленности"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+              <div className="rounded-xl overflow-hidden group" style={{ boxShadow: "0 0 0 2px rgba(255,0,255,0.3), 0 0 40px rgba(255,0,255,0.1)" }}>
+                <div className="relative aspect-video overflow-hidden rounded-xl">
+                  <img
+                    src="https://images.unsplash.com/photo-1626379953822-baec19c3accd?w=800&q=80"
+                    alt="AR очки Microsoft HoloLens"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4">
+                    <span className="tech-tag" style={{ background: "rgba(255,0,255,0.15)", borderColor: "rgba(255,0,255,0.4)", color: "var(--neon-magenta)" }}>HoloLens</span>
+                    <p className="text-white font-bold mt-1 text-lg uppercase" style={{ fontFamily: "Oswald" }}>AR в производстве</p>
+                  </div>
                 </div>
               </div>
             </div>
